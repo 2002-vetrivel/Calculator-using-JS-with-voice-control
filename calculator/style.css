@@ -1,0 +1,116 @@
+body {
+    background-color: #DEDFFE;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.circle {
+    width: 600px;
+    height: 600px;
+    background-color: #DAD7F8;
+    border-radius: 50%;
+    position: absolute;
+    top: -40%;
+    left: 80%;
+}
+
+#Container {
+    padding: 15px;
+    background-color: #686175;
+    border: 0.1px solid silver;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resultContainer {
+    position: relative;
+    padding: 20px;
+    background-color: #BAE8C5;
+    width: 230px;
+    height: 160px;
+    border-radius: 25px;
+    border: 0.1px solid silver;
+    overflow: hidden;
+}
+
+#AI {
+    width: 24px;
+    border-radius: 50px;
+    background-color: #93DEA6;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    border: 0.1px solid silver;
+    cursor: pointer;
+}
+
+#past {
+    text-align: right;
+    width: 100%;
+    font-size: 14px;
+    color: #4a4a4a;
+    margin-top: 60px;
+}
+
+#result {
+    margin-top: -10px;
+    text-align: right;
+    font-size: 200px;
+    font-weight: bold;
+    color: #000;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#resultContainer:has(#result:empty) #result {
+    font-size: 24px;
+}
+
+#resultContainer:not(:has(#result:empty)) #result {
+    font-size: clamp(16px, 5vw, 24px);
+}
+
+button {
+    width: 57px;
+    height: 57px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #fff;
+    border: 0.1px solid silver;
+    margin: 4px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: silver;
+}
+
+#key {
+    background-color: #7E7693;
+}
+
+#func, #equals {
+    background-color: #FF6479;
+}
+
+#fifthRow {
+    margin-bottom: 15px;
+}
+
+#clear, #backSpace {
+    background-color: #938BD3;
+}
+
+@media (max-width: 600px) {
+    .circle {
+        display: none;
+    }
+}

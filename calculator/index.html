@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="circle"></div>
+    <p>Calculator</p>
+    <div id="Container">
+        <div id="resultContainer">
+            <div id="voice">
+                <img src="voice.png" id="AI" alt="AI" onclick="startVoiceRecognition()">
+            </div>
+            <p id="past"></p>
+            <p id="result"></p>
+        </div>
+
+        <div id="buttonContainer">
+            <div id="firstRow">
+                <button id="clear">c</button>
+                <button id="backSpace">⌫</button>
+                <button id="key" style="background-color: #938BD3;">%</button>
+                <button id="func">/</button>
+            </div>
+            <div id="secondRow">
+                <button id="key">7</button>
+                <button id="key">8</button>
+                <button id="key">9</button>
+                <button id="func">*</button>
+            </div>
+            <div id="thirdRow">
+                <button id="key">4</button>
+                <button id="key">5</button>
+                <button id="key">6</button>
+                <button id="func">-</button>
+            </div>
+            <div id="fourthRow">
+                <button id="key">1</button>
+                <button id="key">2</button>
+                <button id="key">3</button>
+                <button id="func">+</button>
+            </div>
+            <div id="fifthRow">
+                <button id="key" style="width: 125px;">0</button>
+                <button id="key">.</button>
+                <button id="equals">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
