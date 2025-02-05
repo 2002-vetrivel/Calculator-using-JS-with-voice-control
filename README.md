@@ -29,4 +29,4 @@ To run the project locally on your machine, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/calculator-web-app.git
+   github.com/2002-vetrivel/Calculator-using-JS-with-voice-control.git
